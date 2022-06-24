@@ -5,7 +5,7 @@ var app = new Vue({
     },
     created() {
         axios
-            .get('http://localhost/boolean/php/php-ajax-dischi/')
+            .get('http://localhost/boolean/php/php-ajax-dischi/api.php')
             .then(function(response) {
                 // handle success
                 this.albums = response.data;
